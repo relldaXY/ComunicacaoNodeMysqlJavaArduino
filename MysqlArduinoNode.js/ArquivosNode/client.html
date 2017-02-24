@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>  
+    <script type="text/javascript" src="clienteHTML.js"></script>
+    <script type='text/javascript' src='http://localhost:8000/socket.io/socket.io.js'></script>
+    
+    <style>
+     body {background-color: powderblue;}
+     h1   {color: blue;}
+     p    {color: red;}
+     
+     img  {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle
+          }
+
+    </style>  
+    
+    </head>
+
+    <body>
+    
+        <h1>Clube Esperto</h1>
+        <h2>Dados do Ambiente</h2>
+        <button id="btnEnviar" onclick="clubeEsperto()">Atualizar</button>
+        
+            <div id="temperatura"></div>
+            <div id="ldr"></div>
+            <div id="umidade"></div>
+            <div id="volume"></div>
+
+        <h2>Alunos presentes nesse momento</h2>
+        <button id="btnEnviar2" onclick="clubeEsperto2()">Atualizar</button>
+            <div id="presentes"></div>
+
+    </body>
+</html>
